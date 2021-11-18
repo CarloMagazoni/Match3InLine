@@ -8,8 +8,8 @@
  
  Commands:
  "q" or "Q" - exit application
- m X Y D - move gem from XY coordinates to 1 of 4 directions
- X - Horizontal
- Y - Vertical
- D - "u" = Up | "l" = Left | "r" = Right | "d" = Down
+ "m X Y D" - move gem from XY coordinates to 1 of 4 directions
+ "X" - Horizontal
+ "Y" - Vertical
+ "D" - "u" = Up | "l" = Left | "r" = Right | "d" = Down
 ![LuaMainAppLua](https://user-images.githubusercontent.com/58231398/142444657-cc22dc84-df5e-4f26-8233-c7b7ce80ca34.JPG)
