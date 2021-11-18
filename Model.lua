@@ -59,24 +59,24 @@ end
 CHECK FOR ADDITIONAL COMBINATIONS (Not asked for implement, but have such opportunity)
 
 local function CheckChain(Matrix,MaskMatrix,i,j)
-  if j-0~=0 then
+  if j ~= 0 then
     if Matrix[i][j] == Matrix[i][j-1] then
-      MarkAsMatched(MaskMatrix,i,j-1)
+      MarkAsMatched(MaskMatrix, i, j-1)
     end
   end
-  if j~=#Matrix[1] then
+  if j ~= #Matrix[1] then
     if Matrix[i][j] == Matrix[i][j+1] then
-      MarkAsMatched(MaskMatrix,i,j+1)
+      MarkAsMatched(MaskMatrix, i, j+1)
     end
   end
-  if i~=0 then
+  if i ~= 0 then
     if Matrix[i][j] == Matrix[i-1][j] then
-      MarkAsMatched(MaskMatrix,i-1,j)
+      MarkAsMatched(MaskMatrix, i-1, j)
     end
   end
-  if i~=#Matrix then
+  if i ~= #Matrix then
     if Matrix[i][j] == Matrix[i+1][j] then
-      MarkAsMatched(MaskMatrix,i+1,j)
+      MarkAsMatched(MaskMatrix, i+1, j)
     end
   end
 end]]--
