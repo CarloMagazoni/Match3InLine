@@ -70,8 +70,10 @@ function Visual.ReadInput()
   input = Prepare(input)
   local Status = ConverInputToStatus(input)
   if Status == Code.EXIT then
+    print("...EXITING...")
     return nil, nil, true
   elseif Status == Code.INVALID then
+    print("ERROR: INVALID COMMAND")
     return nil, nil, false
   end
 
