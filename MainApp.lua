@@ -11,12 +11,13 @@ while Playing == true do
     Model.Dump()
     HaveField = true
   end
-  local from,to,ExitApp = Visual.ReadInput()
+  local from, to, ExitApp = Visual.ReadInput()
   if ExitApp then
     Playing = false
     break
   end
   if from ~= nil and to ~= nil then
-    Model.Move(from,to)
+    Model.Move(from, to)
+    Model.Tick()
   end
 end
