@@ -1,5 +1,5 @@
 local Model = require("Model")
-local Visual = require ("Visual")
+local Visual = require("Visual")
 
 local HaveField = false
 local Playing = true
