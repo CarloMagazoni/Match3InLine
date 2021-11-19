@@ -2,7 +2,7 @@
 Module with player inputs definitions
 
 Methods:
-ReadInput() - read player commands and transform it into args for Model.Move
+ReadInput() - Read player's input and return coordinates or Exit
 
 ]]--
 
@@ -12,7 +12,7 @@ local Code = {EXIT = 1, VALID = 2, INVALID = 3}
 
 
 --[[
-Validate input
+Delete " " from input
 ]]--
 local function Prepare(Input)
   Input = string.gsub(Input, "%s+", "")
@@ -62,7 +62,7 @@ local function ConvertToDistinationCoords(from,Direction)
 end
 
 --[[
-Read player's input and return coordinates
+Read player's input and return coordinates or Exit
 ]]--
 function Visual.ReadInput()
   print("Type your command")
